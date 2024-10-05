@@ -1,4 +1,8 @@
 import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import MainContent from "./components/MainContent/MainContent";
+import Navigation from "./components/Navigation/Navigation";
 
 /**
  *
@@ -12,10 +16,12 @@ import "./App.css";
 
 function App() {
 	return (
-		<>
-			<h1> Website from T-Al-D</h1>
-			<h1>Vite + React</h1>
-		</>
+		<div>
+			<Header></Header>
+			<Navigation></Navigation>
+			<MainContent></MainContent>
+			<Footer></Footer>
+		</div>
 	);
 }
 

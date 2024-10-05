@@ -1,6 +1,7 @@
 # Website-Portfolio
 
-A Website b uild with react framework (typescript + vite)
+A Website build with react framework (typescript + vite)
+Icon created with : https://www.pixilart.com/
 
 ### Here: https://t-al-d.github.io/website-portfolio/
 
