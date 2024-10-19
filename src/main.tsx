@@ -19,7 +19,7 @@ import Header from "./components/Header/Header.tsx";
 import Navigation from "./components/Navigation/Navigation.tsx";
 import Footer from "./components/Footer/Footer.tsx";
 
-export const baseUrl: string = "/website-portfolio";
+export const baseUrl: string = "/website-portfolio/";
 
 /**
  * The React Router is implemented a bit different in v6.4:
@@ -31,11 +31,17 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<Header></Header>
 		<Navigation></Navigation>
-		<HashRouter basename={baseUrl}>
+		<HashRouter>
 			<Routes>
-				<Route index path="/" element={<Home></Home>}></Route>
-				<Route path="/about" element={<About></About>}></Route>
-				<Route path="/projects" element={<Projects></Projects>}></Route>
+				<Route index path={baseUrl} element={<Home></Home>}></Route>
+				<Route
+					path={baseUrl + "/about"}
+					element={<About></About>}
+				></Route>
+				<Route
+					path={baseUrl + "/projects"}
+					element={<Projects></Projects>}
+				></Route>
 			</Routes>
 		</HashRouter>
 		<Footer></Footer>
