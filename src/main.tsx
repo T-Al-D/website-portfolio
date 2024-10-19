@@ -2,8 +2,19 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 // import App from "./App.tsx";
-import { RouterProvider } from "react-router-dom";
+/**
+ * import { RouterProvider } from "react-router-dom";
 import { router } from "./Routes/Routes.tsx";
+import Header from "./components/Header/Header.tsx";
+import Navigation from "./components/Navigation/Navigation.tsx";
+import Footer from "./components/Footer/Footer.tsx";
+ */
+
+//import App from "./App.tsx";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import About from "./pages/About/About.tsx";
+import Home from "./pages/Home/Home.tsx";
+import Projects from "./pages/Projects/Projects.tsx";
 import Header from "./components/Header/Header.tsx";
 import Navigation from "./components/Navigation/Navigation.tsx";
 import Footer from "./components/Footer/Footer.tsx";
@@ -18,7 +29,13 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<Header></Header>
 		<Navigation></Navigation>
-		<RouterProvider router={router} />
+		<HashRouter>
+			<Routes>
+				<Route index path="/" element={<Home></Home>}></Route>
+				<Route path="/about" element={<About></About>}></Route>
+				<Route path="/projects" element={<Projects></Projects>}></Route>
+			</Routes>
+		</HashRouter>
 		<Footer></Footer>
 	</StrictMode>
 );

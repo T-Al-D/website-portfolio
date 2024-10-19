@@ -1,8 +1,13 @@
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import * as React from "react";
-import Footer from "./components/Footer/Footer";
+//import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
+//import { router } from "./Routes/Routes";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Projects from "./pages/Projects/Projects";
 
 /**
  *
@@ -19,9 +24,24 @@ function App() {
 		<div>
 			<Header></Header>
 			<Navigation></Navigation>
-			<Footer></Footer>
+			<HashRouter basename="/website-portfolio">
+				<Routes>
+					<Route index path="/" element={<Home></Home>}></Route>
+					<Route path="/about" element={<About></About>}></Route>
+					<Route
+						path="/projects"
+						element={<Projects></Projects>}
+					></Route>
+				</Routes>
+			</HashRouter>
 		</div>
 	);
 }
+
+/**
+ * <Header></Header>
+			<Navigation></Navigation>
+			<Footer></Footer>
+ */
 
 export default App;
