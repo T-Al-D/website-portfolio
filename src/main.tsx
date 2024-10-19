@@ -19,6 +19,8 @@ import Header from "./components/Header/Header.tsx";
 import Navigation from "./components/Navigation/Navigation.tsx";
 import Footer from "./components/Footer/Footer.tsx";
 
+export const baseUrl: string = "/website-portfolio";
+
 /**
  * The React Router is implemented a bit different in v6.4:
  * the Routes are defined and added to the structure as <RouterProvider routes>
@@ -29,7 +31,7 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<Header></Header>
 		<Navigation></Navigation>
-		<HashRouter>
+		<HashRouter basename={baseUrl}>
 			<Routes>
 				<Route index path="/" element={<Home></Home>}></Route>
 				<Route path="/about" element={<About></About>}></Route>
