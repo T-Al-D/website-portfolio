@@ -19,9 +19,9 @@ import Header from "./components/Header/Header.tsx";
 import Navigation from "./components/Navigation/Navigation.tsx";
 import Footer from "./components/Footer/Footer.tsx";
 
-export const baseUrl: string = "/website-portfolio/";
+export const baseUrl: string = "/";
 
-/**
+/** website-portfolio
  * The React Router is implemented a bit different in v6.4:
  * the Routes are defined and added to the structure as <RouterProvider routes>
  * to display other elements like Header or Footer, they have to be be put in
@@ -31,7 +31,7 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<Header></Header>
 		<Navigation></Navigation>
-		<HashRouter>
+		<HashRouter basename="/">
 			<Routes>
 				<Route index path={baseUrl} element={<Home></Home>}></Route>
 				<Route
