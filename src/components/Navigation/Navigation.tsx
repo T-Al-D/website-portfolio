@@ -1,5 +1,6 @@
-import { baseUrl } from "../../main";
 import "./Navigation.css";
+
+export const baseUrl: string = "/website-portfolio/";
 
 export default function Navigation() {
 	return (
