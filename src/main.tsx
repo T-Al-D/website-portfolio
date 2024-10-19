@@ -2,15 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 // import App from "./App.tsx";
-/**
- * import { RouterProvider } from "react-router-dom";
-import { router } from "./Routes/Routes.tsx";
-import Header from "./components/Header/Header.tsx";
-import Navigation from "./components/Navigation/Navigation.tsx";
-import Footer from "./components/Footer/Footer.tsx";
- */
 
-//import App from "./App.tsx";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/About/About.tsx";
 import Home from "./pages/Home/Home.tsx";
