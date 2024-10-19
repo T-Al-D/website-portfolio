@@ -1,4 +1,4 @@
-import { baseUrl } from "../../Routes/Routes";
+import { baseUrl } from "../../main";
 import "./Navigation.css";
 
 export default function Navigation() {
@@ -8,10 +8,10 @@ export default function Navigation() {
 				<a href={baseUrl}>
 					<button className="navigationButton"> Home</button>
 				</a>
-				<a href={baseUrl + "about"}>
+				<a href={baseUrl + "#about"}>
 					<button className="navigationButton"> About</button>
 				</a>
-				<a href={baseUrl + "projects"}>
+				<a href={baseUrl + "#projects"}>
 					<button className="navigationButton"> Projects</button>
 				</a>
 			</nav>

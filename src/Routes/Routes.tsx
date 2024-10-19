@@ -10,8 +10,9 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
  *
  * the ErrorPage can be reached by any path that is not specified here (*)
  */
-export const baseUrl: string = "/#";
+
 /*
+export const baseUrl: string = "/website-portfolio/";
 export const router = createHashRouter([
 	{ path: baseUrl, element: <Home></Home> },
 	{ path: baseUrl + "about", element: <About></About> },
@@ -24,11 +25,11 @@ export const router = createHashRouter([
 
 export const router = createHashRouter([
 	{
-		path: "/",
+		path: "/*",
 		element: <App></App>,
 		children: [
 			{ path: "/", element: <Home></Home> },
-			{ path: baseUrl + "about", element: <About></About> },
+			{ path: "about", element: <About></About> },
 			{ path: "projects", element: <Projects></Projects> },
 			{ path: "*", element: <ErrorPage></ErrorPage> },
 		],

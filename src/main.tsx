@@ -31,15 +31,15 @@ createRoot(document.getElementById("root")!).render(
 	<StrictMode>
 		<Header></Header>
 		<Navigation></Navigation>
-		<HashRouter basename="/">
+		<HashRouter>
 			<Routes>
-				<Route index path={baseUrl} element={<Home></Home>}></Route>
+				<Route path={baseUrl} element={<Home></Home>}></Route>
 				<Route
-					path={baseUrl + "/about"}
+					path={baseUrl + "about"}
 					element={<About></About>}
 				></Route>
 				<Route
-					path={baseUrl + "/projects"}
+					path={baseUrl + "projects"}
 					element={<Projects></Projects>}
 				></Route>
 			</Routes>

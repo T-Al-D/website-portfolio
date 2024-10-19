@@ -1,5 +1,6 @@
 import homepageImg from "../../assets/images/homepage/hompepageImg2.png";
-import { baseUrl } from "../../Routes/Routes";
+import { baseUrl } from "../../main";
+
 import "./Header.css";
 
 export default function Header() {
