@@ -1,12 +1,8 @@
 import "./App.css";
-import * as React from "react";
+// import * as React from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
-import About from "./pages/About/About";
-import Projects from "./pages/Projects/Projects";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ReactDOM from "react-dom";
 
 /**
  *
