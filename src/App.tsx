@@ -1,8 +1,12 @@
 import "./App.css";
+import * as React from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import MainContent from "./components/MainContent/MainContent";
 import Navigation from "./components/Navigation/Navigation";
+import About from "./pages/About/About";
+import Projects from "./pages/Projects/Projects";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ReactDOM from "react-dom";
 
 /**
  *
@@ -19,7 +23,6 @@ function App() {
 		<div>
 			<Header></Header>
 			<Navigation></Navigation>
-			<MainContent></MainContent>
 			<Footer></Footer>
 		</div>
 	);
