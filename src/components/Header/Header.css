@@ -14,10 +14,21 @@
 	border-color: blue;
 }
 
-h1 {
+.headerLetters1 {
 	font-size: calc(20px + 2.25vw);
+	animation: fade 1.75s ease-in;
 }
 
-h3 {
+.headerLetters2 {
 	font-size: calc(16px + 0.81vw);
+	animation: fade 1.75s ease-in;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }

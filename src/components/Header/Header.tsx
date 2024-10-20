@@ -15,8 +15,8 @@ export default function Header() {
 			</div>
 			<div className="headChild">
 				<header>
-					<h1> Hello, I´m T-Al-D</h1>
-					<h3>IT - Apprentice</h3>
+					<h1 className="headerLetters1"> Hello, I´m T-Al-D</h1>
+					<h3 className="headerLetters2">IT - Apprentice</h3>
 				</header>
 			</div>
 		</div>

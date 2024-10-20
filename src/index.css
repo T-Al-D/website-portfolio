@@ -7,10 +7,12 @@ styles for the entire project
 		Arial, sans-serif;
 	line-height: 0.7;
 	font-weight: normal;
+	--font-color: #ffffff;
+	--background-coloration: #1f1f1f;
 
 	margin: 0% 0.5% 0.5% 0%;
 	padding: 0% 1% 1% 0%;
 
-	color: #ffffff;
-	background-color: #1f1f1f;
+	color: var(--font-color);
+	background-color: var(--background-coloration);
 }
