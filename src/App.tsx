@@ -9,22 +9,14 @@ import Projects from "./pages/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 
 /**
- *
-	const [count, setCount] = useState(0);
-  				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-        import { useState } from "react";
- * @returns 
+ * Ther Header contains the Navigation
  */
-
 export const baseUrl: string = "/";
 
 function App() {
 	return (
 		<div>
 			<Header></Header>
-			<Navigation></Navigation>
 			<HashRouter>
 				<Routes>
 					<Route path={baseUrl} element={<Home></Home>}></Route>

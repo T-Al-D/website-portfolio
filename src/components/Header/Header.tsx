@@ -1,5 +1,5 @@
 import homepageImg from "../../assets/images/homepage/hompepageImg2.png";
-import { navBaseUrl } from "../Navigation/Navigation";
+import Navigation, { navBaseUrl } from "../Navigation/Navigation";
 
 import "./Header.css";
 
@@ -16,6 +16,9 @@ export default function Header() {
 					<h1 className="headerLetters1"> Hello, I´m T-Al-D</h1>
 					<h3 className="headerLetters2">IT - Apprentice</h3>
 				</header>
+			</div>
+			<div className="navChild">
+				<Navigation></Navigation>
 			</div>
 		</div>
 	);
