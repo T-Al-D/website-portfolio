@@ -8,9 +8,7 @@ export default function Header() {
 		<div className="headParent">
 			<div className="headChild">
 				<a href={navBaseUrl}>
-					<button className="homepageImg">
-						<img className="homepageImg" src={homepageImg} alt="" />
-					</button>
+					<img className="homepageImg" src={homepageImg} alt="" />
 				</a>
 			</div>
 			<div className="headChild">

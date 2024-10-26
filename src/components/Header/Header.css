@@ -1,5 +1,6 @@
 .headParent {
 	overflow: hidden;
+	animation: fade 1.75s ease-in;
 }
 
 .headChild {
@@ -9,18 +10,20 @@
 }
 
 .homepageImg {
-	border-width: 5px;
+	width: calc(70px + 5.5vw);
+	border: double;
+	border-width: 6px;
 	border-radius: 50%;
 	border-color: blue;
 }
 
 .headerLetters1 {
-	font-size: calc(20px + 2.25vw);
+	font-size: calc(18px + 2vw);
 	animation: fade 1.75s ease-in;
 }
 
 .headerLetters2 {
-	font-size: calc(16px + 0.81vw);
+	font-size: calc(14px + 0.8vw);
 	animation: fade 1.75s ease-in;
 }
 

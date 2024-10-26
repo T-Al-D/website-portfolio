@@ -11,7 +11,7 @@ styles for the entire project
 	--background-coloration: #1f1f1f;
 
 	margin: 0% 0.5% 0.5% 0%;
-	padding: 0% 1% 1% 0%;
+	padding: 0% 0.5% 0.5% 0%;
 
 	color: var(--font-color);
 	background-color: var(--background-coloration);

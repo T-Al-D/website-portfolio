@@ -1,4 +1,14 @@
 #root {
 	overflow: hidden;
 	color: #ffffff;
+	animation: fade 0.8s ease-in;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
