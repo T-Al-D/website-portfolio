@@ -11,5 +11,16 @@
 
 	border-width: 5px;
 	border-radius: 10%;
-	border-color: rgb(4, 52, 107);
+	border-color: rgba(17, 17, 17, 0.486);
+}
+
+.drawer-divider {
+	background-color: #fff;
+	width: 95%;
+}
+
+/*testing for drawer-paper*/
+.drawer-box_btn {
+	background-color: #10052b;
+	background-size: cover;
 }

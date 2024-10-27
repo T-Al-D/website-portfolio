@@ -106,38 +106,59 @@ export default function Navigation() {
 		},
 	];
 
+	/**
+	 * sx is a prop from MUI to change the CSS in the component
+	 */
+
 	const DrawerList = (
 		<Box
 			sx={{ width: drawerWidth }}
 			role="presentation"
 			onClick={toggleDrawer(false)}
+			className="drawer-box_btn"
 		>
 			<List>
 				{menuItems.map((item) => (
 					<ListItem key={item.text} disablePadding>
-						<Link href={item.url}>
-							<ListItemButton>
-								<ListItemIcon>{item.icon}</ListItemIcon>
+						<Link
+							href={item.url}
+							sx={{ color: "#ffff" }}
+							underline="hover"
+						>
+							<ListItemButton sx={{ color: "#ffff" }}>
+								<ListItemIcon sx={{ color: "#ffff" }}>
+									{item.icon}
+								</ListItemIcon>
 								<ListItemText primary={item.text} />
 							</ListItemButton>
 						</Link>
 					</ListItem>
 				))}
 			</List>
-			<Divider></Divider>
+			<Divider className="drawer-divider"></Divider>
 		</Box>
 	);
 
 	return (
 		<div>
 			<Button
-				className="menu-Btn"
 				onClick={toggleDrawer(true)}
 				startIcon={<MenuIcon></MenuIcon>}
 			>
 				Menu
 			</Button>
-			<Drawer open={open} onClose={toggleDrawer(false)}>
+			<Drawer
+				open={open}
+				onClose={toggleDrawer(false)}
+				PaperProps={{
+					sx: {
+						backgroundColor: "#10052b",
+						color: "#fff",
+						border: "solid 1px solid #fff",
+					},
+				}}
+			>
+				<h3>Navigation</h3>
 				{DrawerList}
 			</Drawer>
 		</div>
