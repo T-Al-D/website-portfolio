@@ -1,0 +1,16 @@
+.footer-parent {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.footer-divider {
+	background-color: #ffffff42;
+}
+
+.footer-child {
+	overflow: hidden;
+}
+
+.footer-content {
+	display: inline-block;
+}
