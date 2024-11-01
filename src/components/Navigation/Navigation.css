@@ -1,10 +1,18 @@
-/*calc in fontsize for minimum font-size*/
+.nav-parent {
+	padding: 0% 0.5% 0.5% 0%;
+	float: right;
+	border-radius: 20px;
+	border-style: double;
+	border-width: 5px;
+	border-color: rgba(25, 29, 255, 0.822);
+}
+
 .navigationButton {
 	margin: 0% 0.5% 0.5% 0%;
 	min-height: 35px;
 	min-width: 90px;
 	text-align: center;
-
+	/*calc in fontsize for minimum font-size*/
 	font-size: calc(16px + 0.8vw);
 	color: #fff;
 	background-color: transparent;
@@ -23,4 +31,17 @@
 .drawer-box_btn {
 	background-color: #10052b;
 	background-size: cover;
+}
+
+/*reacts to certain screen size*/
+@media (min-width: 950px) {
+	.small-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 949px) {
+	.big-nav {
+		display: none;
+	}
 }

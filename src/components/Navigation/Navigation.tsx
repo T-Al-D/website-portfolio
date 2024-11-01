@@ -17,102 +17,59 @@ import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
 import LightbulbRoundedIcon from "@mui/icons-material/LightbulbRounded";
 
-const drawerWidth = 147;
-
-/** 
-export default function ResponsiveDrawer() {
-	//const { window } = props;
-	const [mobileOpen, setMobileOpen] = React.useState(false);
-	const [isClosing, setIsClosing] = React.useState(false);
-  
-const handleDrawerClose = () => {
-	setIsClosing(true);
-	setMobileOpen(false);
-};
-
-const handleDrawerTransitionEnd = () => {
-	setIsClosing(false);
-};
-
-const handleDrawerToggle = () => {
-	if (!isClosing) {
-		setMobileOpen(!mobileOpen);
-	}
-};
-const drawer = (
-	<div>
-		<Toolbar />
-		<Divider />
-		<List>
-			{["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-				<ListItem key={text} disablePadding>
-					<ListItemButton>
-						<ListItemIcon>ListItemIcon</ListItemIcon>
-						<ListItemText primary={text} />
-					</ListItemButton>
-				</ListItem>
-			))}
-		</List>
-		<Divider />
-		<List>
-			{["All mail", "Trash", "Spam"].map((text, index) => (
-				<ListItem key={text} disablePadding>
-					<ListItemButton>
-						<ListItemIcon>ListItemIcon</ListItemIcon>
-						<ListItemText primary={text} />
-					</ListItemButton>
-				</ListItem>
-			))}
-		</List>
-	</div>
-);
-*/
-
-/**
- * The navbaseUrl is seperate/different from the page url in main.tsx
- * 			<nav>
- * 				<a href={navBaseUrl}>
-					<button className="navigationButton"> Home</button>
-				</a>
-				<a href={navBaseUrl + "#about"}>
-					<button className="navigationButton"> About</button>
-				</a>
-				<a href={navBaseUrl + "#projects"}>
-					<button className="navigationButton"> Projects</button>
-				</a>
-			</nav>
-
- */
 export const navBaseUrl: string = "/website-portfolio/";
 
 export default function Navigation() {
+	/**
+	 * functions for Drawer (small screen)
+	 */
 	const [open, setOpen] = React.useState(false);
 
 	const toggleDrawer = (newOpen: boolean) => () => {
 		setOpen(newOpen);
 	};
 
+	/**selected functions for bigger screens */
+	const [selectedIndex, setSelectedIndex] = React.useState(1);
+
+	const handleListItemClick = (
+		_event: React.MouseEvent<HTMLDivElement, MouseEvent>,
+		index: number
+	) => {
+		setSelectedIndex(index);
+	};
+
+	/**list needed for all */
+
 	const menuItems = [
-		{ text: "Home", url: navBaseUrl, icon: <HomeRoundedIcon /> },
+		{
+			text: "Home",
+			url: navBaseUrl,
+			icon: <HomeRoundedIcon />,
+			selectedIndex: 1,
+		},
 		{
 			text: "About",
 			url: navBaseUrl + "#about",
 			icon: <InfoRoundedIcon />,
+			selectedIndex: 2,
 		},
 		{
 			text: "Projects",
 			url: navBaseUrl + "#projects",
 			icon: <LightbulbRoundedIcon />,
+			selectedIndex: 3,
 		},
 	];
 
 	/**
 	 * sx is a prop from MUI to change the CSS in the component
+	 * DrawerList for smaller screens
 	 */
 
 	const DrawerList = (
 		<Box
-			sx={{ width: drawerWidth }}
+			sx={{ width: 147 }}
 			role="presentation"
 			onClick={toggleDrawer(false)}
 			className="drawer-box_btn"
@@ -139,28 +96,67 @@ export default function Navigation() {
 		</Box>
 	);
 
-	return (
+	const ButtonList = (
 		<div>
-			<Button
-				onClick={toggleDrawer(true)}
-				startIcon={<MenuIcon></MenuIcon>}
-			>
-				Menu
-			</Button>
-			<Drawer
-				open={open}
-				onClose={toggleDrawer(false)}
-				PaperProps={{
-					sx: {
-						backgroundColor: "#10052b",
-						color: "#fff",
-						border: "solid 1px solid #fff",
-					},
-				}}
-			>
-				<h3>Navigation</h3>
-				{DrawerList}
-			</Drawer>
+			<List sx={{ display: "flex", flexDirection: "row", padding: 0 }}>
+				{menuItems.map((item) => (
+					<ListItem
+						alignItems="flex-start"
+						key={item.text}
+						disablePadding
+					>
+						<Link
+							href={item.url}
+							sx={{ color: "#ffff" }}
+							underline="hover"
+						>
+							<ListItemButton
+								sx={{ color: "#ffff" }}
+								selected={selectedIndex === item.selectedIndex}
+								onClick={(event) =>
+									handleListItemClick(
+										event,
+										item.selectedIndex
+									)
+								}
+							>
+								<ListItemIcon sx={{ color: "#ffff" }}>
+									{item.icon}
+								</ListItemIcon>
+								<ListItemText primary={item.text} />
+							</ListItemButton>
+						</Link>
+					</ListItem>
+				))}
+			</List>
+		</div>
+	);
+
+	return (
+		<div className="nav-parent">
+			<div className="small-nav">
+				<Button
+					onClick={toggleDrawer(true)}
+					startIcon={<MenuIcon></MenuIcon>}
+				>
+					Menu
+				</Button>
+				<Drawer
+					open={open}
+					onClose={toggleDrawer(false)}
+					PaperProps={{
+						sx: {
+							backgroundColor: "#10052b",
+							color: "#fff",
+							border: "solid 1px solid #fff",
+						},
+					}}
+				>
+					<h3>Navigation</h3>
+					{DrawerList}
+				</Drawer>
+			</div>
+			<div className="big-nav">{ButtonList}</div>
 		</div>
 	);
 }

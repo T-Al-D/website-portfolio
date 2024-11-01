@@ -43,6 +43,12 @@ body::after {
 	font-size: 15px;
 	letter-spacing: 2px;
 	line-height: 1.15;
-	word-spacing: 2px;
+	word-spacing: 1.5px;
 	text-wrap: wrap;
+}
+
+.basic-text::first-letter {
+	text-transform: uppercase;
+	font-weight: 650;
+	font-size: 18px;
 }
