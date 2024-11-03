@@ -1,12 +1,20 @@
 # Website-Portfolio
 
-A Website build with react framework (typescript + vite)
-Icon created with : https://www.pixilart.com/
+## A Website build with react framework (typescript + vite)
+
+(Main)Icon created with : https://www.pixilart.com/
 Components from MUI : https://mui.com/material-ui/getting-started/installation/
 Backgroung-Image : https://pixabay.com/images/search/blue%20circuit/
 
+Fonts: - https://www.1001freefonts.com/vanilla-extract.font
+
+-   https://www.1001freefonts.com/kingthings-hand.font
+-   https://www.1001freefonts.com/objective.font
+
 ### Here: https://t-al-d.github.io/website-portfolio/
 
+.
+.
 .
 .
 .

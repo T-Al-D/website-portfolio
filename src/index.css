@@ -1,3 +1,15 @@
+/* fonts */
+@font-face {
+	font-family: vanilla-extract;
+	src: url("./assets/fonts/vanilla-extract/VanillaExtractRegular.ttf")
+		format("ttf");
+}
+
+@font-face {
+	font-family: objective;
+	src: url("./assets/fonts/objective/Objective.ttf");
+}
+
 /*
 styles for the entire project
 */
@@ -38,9 +50,9 @@ body::after {
 }
 
 .basic-text {
-	font-family: Arial, sans-serif;
+	font-family: objective;
 	font-weight: 450;
-	font-size: 15px;
+	font-size: 16px;
 	letter-spacing: 2px;
 	line-height: 1.15;
 	word-spacing: 1.5px;
