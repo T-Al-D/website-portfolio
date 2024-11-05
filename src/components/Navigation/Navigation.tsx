@@ -49,16 +49,16 @@ export default function Navigation() {
 			selectedIndex: 1,
 		},
 		{
-			text: "About",
-			url: navBaseUrl + "#about",
-			icon: <InfoRoundedIcon />,
-			selectedIndex: 2,
-		},
-		{
 			text: "Projects",
 			url: navBaseUrl + "#projects",
 			icon: <LightbulbRoundedIcon />,
 			selectedIndex: 3,
+		},
+		{
+			text: "About",
+			url: navBaseUrl + "#about",
+			icon: <InfoRoundedIcon />,
+			selectedIndex: 2,
 		},
 	];
 

@@ -6,9 +6,11 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Footer from "./components/Footer/Footer";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 /**
  * Ther Header contains the Navigation
+ * The last Route is for the Error Page
  */
 export const baseUrl: string = "/";
 
@@ -26,6 +28,10 @@ function App() {
 					<Route
 						path={baseUrl + "projects"}
 						element={<Projects></Projects>}
+					></Route>
+					<Route
+						path={baseUrl + "*"}
+						element={<ErrorPage></ErrorPage>}
 					></Route>
 				</Routes>
 			</HashRouter>

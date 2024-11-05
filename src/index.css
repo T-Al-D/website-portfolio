@@ -51,8 +51,8 @@ body::after {
 
 .basic-text {
 	font-family: objective;
-	font-weight: 450;
-	font-size: 16px;
+	font-weight: 650;
+	font-size: 17px;
 	letter-spacing: 2px;
 	line-height: 1.15;
 	word-spacing: 1.5px;
@@ -63,4 +63,14 @@ body::after {
 	text-transform: uppercase;
 	font-weight: 650;
 	font-size: 18px;
+}
+
+.mini-text {
+	font-family: vanilla-extract;
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 1.15;
+	word-spacing: 1.5px;
+	text-wrap: wrap;
 }

@@ -1,3 +1,9 @@
 export default function ErrorPage() {
-	return <div>Sorry, but this page doesn´t exist!</div>;
+	return (
+		<div>
+			<pre className="basic-text">
+				Sorry, but this page doesn´t exist!
+			</pre>
+		</div>
+	);
 }
