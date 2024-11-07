@@ -1,12 +1,20 @@
+import "./Projects.css";
 import {
-	CardActionArea,
-	CardMedia,
-	CardContent,
+	Accordion,
+	AccordionSummary,
 	Typography,
-	CardActions,
+	AccordionDetails,
 } from "@mui/material";
-import Card from "@mui/material/Card";
-import Button from "@mui/material/Button";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+
+const projectList = [
+	{
+		id: 1,
+		name: "TkInter Mixed Programs",
+		language: "Python 3.x",
+		description: "experimenting with Tkinter Library to create a UI.",
+	},
+];
 
 export default function Projects() {
 	return (
@@ -14,34 +22,26 @@ export default function Projects() {
 			<pre className="basic-text">
 				My most interesting projects (in GitHub) are:
 			</pre>
-			<Card sx={{ maxWidth: 345 }}>
-				<CardActionArea>
-					<CardMedia
-						component="img"
-						height="140"
-						image="/static/images/cards/contemplative-reptile.jpg"
-						alt="green iguana"
-					/>
-					<CardContent>
-						<Typography gutterBottom variant="h5" component="div">
-							Lizard
+			<div className="accordion">
+				<Accordion sx={{ color: "#fff", background: "#074a42" }}>
+					<AccordionSummary
+						expandIcon={
+							<ArrowDownwardIcon sx={{ color: "#fff" }} />
+						}
+						aria-controls="panel1-content"
+						id="panel1-header"
+					>
+						<Typography>Accordion 1</Typography>
+					</AccordionSummary>
+					<AccordionDetails>
+						<Typography>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Suspendisse malesuada lacus ex, sit amet
+							blandit leo lobortis eget.
 						</Typography>
-						<Typography
-							variant="body2"
-							sx={{ color: "text.secondary" }}
-						>
-							Lizards are a widespread group of squamate reptiles,
-							with over 6,000 species, ranging across all
-							continents except Antarctica
-						</Typography>
-					</CardContent>
-				</CardActionArea>
-				<CardActions>
-					<Button size="small" color="primary">
-						Share
-					</Button>
-				</CardActions>
-			</Card>
+					</AccordionDetails>
+				</Accordion>
+			</div>
 		</div>
 	);
 }
