@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
+/*
 const projectList = [
 	{
 		id: 1,
@@ -14,7 +15,7 @@ const projectList = [
 		language: "Python 3.x",
 		description: "experimenting with Tkinter Library to create a UI.",
 	},
-];
+];*/
 
 export default function Projects() {
 	return (
