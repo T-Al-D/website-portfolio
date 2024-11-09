@@ -5,4 +5,11 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
 	plugins: [react()],
 	base: "/website-portfolio/",
+	assetsInclude: [
+		"**/*.png",
+		"**/*.PNG",
+		"**/*.jpg",
+		"**/*.jpeg",
+		"**/*.svg",
+	], // Add image formats here
 });

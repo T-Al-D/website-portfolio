@@ -52,7 +52,7 @@ body::after {
 .basic-text {
 	font-family: objective;
 	font-weight: 650;
-	font-size: 17px;
+	font-size: 1.1rem;
 	letter-spacing: 2px;
 	line-height: 1.15;
 	word-spacing: 1.5px;
@@ -62,13 +62,13 @@ body::after {
 .basic-text::first-letter {
 	text-transform: uppercase;
 	font-weight: 650;
-	font-size: 18px;
+	font-size: 1.25rem;
 }
 
 .mini-text {
 	font-family: vanilla-extract;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 1rem;
 	letter-spacing: 1px;
 	line-height: 1.15;
 	word-spacing: 1.5px;
