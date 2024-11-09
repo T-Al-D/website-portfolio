@@ -5,6 +5,9 @@ import {
 	AccordionDetails,
 	Card,
 	CardMedia,
+	CardActions,
+	Button,
+	Link,
 } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
@@ -20,6 +23,7 @@ const projectList = [
 		description:
 			"Experimenting with Tkinter library to create a User-Interface.",
 		imgSrc: tkinterImg,
+		link: "https://github.com/T-Al-D/TkinterMixedApplication",
 	},
 	{
 		id: 2,
@@ -28,13 +32,15 @@ const projectList = [
 		description:
 			"Multiple small Programs bound to one. Navigation possible.",
 		imgSrc: mixedProgramsImg,
+		link: "https://github.com/T-Al-D/MixedWPFApplication",
 	},
 	{
 		id: 3,
-		name: "Async ESP32 Webserver",
-		language: "C",
+		name: "Async ESP32-V3 Webserver",
+		language: "C++",
 		description: "Async Webserver with simple website - mini IoT Project.",
 		imgSrc: "",
+		link: "https://github.com/T-Al-D/Asynchronous-ESP32-Webserver",
 	},
 ];
 
@@ -84,10 +90,26 @@ export default function Projects() {
 									width="auto"
 									image={item.imgSrc.toString()}
 									alt={""}
-									sx={{ borderRadius: 2 }}
+									sx={{}}
 								/>
 							</Card>
 							<div>{item.description}</div>
+							<Link href={item.link} underline="always">
+								<Button
+									sx={{
+										margin: 1,
+										border: "2px solid #1976d2",
+										color: "#ffff",
+										"&:hover": {
+											backgroundColor: "#1a3869", // Change background on hover (example: blue)
+											borderColor: "#ffff", // Change border color on hover (optional)
+										},
+									}}
+									size="small"
+								>
+									Learn More
+								</Button>
+							</Link>
 						</AccordionDetails>
 					</Accordion>
 				))}
