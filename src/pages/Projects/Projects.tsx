@@ -11,7 +11,7 @@ import {
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 import tkinterImg from "../../assets/images/projects/TkinterMixedProgramms.PNG";
-import mixedProgramsImg from "../../assets/images/projects/MixedProgramms.PNG";
+import mixedProgramsImg from "../../assets/images/projects/MixedPrograms.PNG";
 
 /* make sure the images are packaged in the objects correcty, no {} !*/
 const projectList = [
@@ -29,7 +29,7 @@ const projectList = [
 		name: "Mixed Programs",
 		language: "C#",
 		description:
-			"Multiple small Programs bound to one. Navigation possible.",
+			"Multiple small Programs bound to one WPF-App. Navigation possible.",
 		imgSrc: mixedProgramsImg,
 		link: "https://github.com/T-Al-D/MixedWPFApplication",
 	},
@@ -76,12 +76,11 @@ export default function Projects() {
 							aria-controls="panel1-content"
 							id="panel1-header"
 						>
-							<div>{item.name}</div>
+							<div className="accordion-outside-header">
+								{item.name + " (" + item.language + ")"}
+							</div>
 						</AccordionSummary>
 						<AccordionDetails>
-							<div className="accordion-inside-header">
-								{item.language}
-							</div>
 							<Card>
 								<CardMedia
 									component="img"
