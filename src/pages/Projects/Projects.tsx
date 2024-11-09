@@ -5,7 +5,6 @@ import {
 	AccordionDetails,
 	Card,
 	CardMedia,
-	CardActions,
 	Button,
 	Link,
 } from "@mui/material";
