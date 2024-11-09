@@ -11,7 +11,7 @@ import {
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 import tkinterImg from "../../assets/images/projects/TkinterMixedProgramms.PNG";
-import mixedProgramsImg from "../../assets/images/projects/MixedPrograms.PNG";
+import mixedProgramsImg from "../../assets/images/projects/MixedWPF.PNG";
 
 /* make sure the images are packaged in the objects correcty, no {} !*/
 const projectList = [
@@ -26,7 +26,7 @@ const projectList = [
 	},
 	{
 		id: 2,
-		name: "Mixed Programs",
+		name: "Mixed WPF Programs",
 		language: "C#",
 		description:
 			"Multiple small Programs bound to one WPF-App. Navigation possible.",
