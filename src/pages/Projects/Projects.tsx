@@ -9,6 +9,7 @@ import {
 	Link,
 } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import SentimentSatisfiedIcon from "@mui/icons-material/SentimentSatisfied";
 
 import tkinterImg from "../../assets/images/projects/TkinterMixedProgramms.PNG";
 import mixedProgramsImg from "../../assets/images/projects/MixedWPF.PNG";
@@ -112,6 +113,12 @@ export default function Projects() {
 					</Accordion>
 				))}
 			</div>
+			<pre className="basic-text">
+				{" "}
+				In future, I hope to have more repositories with interesting
+				projects.
+				<SentimentSatisfiedIcon></SentimentSatisfiedIcon>
+			</pre>
 		</div>
 	);
 }

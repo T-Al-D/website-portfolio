@@ -57,15 +57,17 @@ export default function Home() {
 							className="mini-text"
 							key={item.name}
 							sx={{
-								width: 190,
-								height: 200,
-								justifyContent: "flex-start",
+								maxWidth: 200,
+								minHeight: 180,
+								justifyContent: "center",
 								alignItems: "center",
 								textAlign: "center",
 								borderRadius: 5,
+								border: "2px solid #2c2f8a",
 								bgcolor: "rgba(26, 113, 154, 0.92)",
 								"&:hover": {
 									bgcolor: "rgba(11, 54, 74, 0.92)",
+									border: "2px solid #1976d2",
 								},
 							}}
 						>
@@ -79,7 +81,7 @@ export default function Home() {
 				</Stack>
 			</div>
 			<pre className="basic-text">
-				For the Future I´m curious to see how software will create and
+				For the future I´m curious to see how software will create and
 				shape more complex virtual worlds.
 			</pre>
 		</div>

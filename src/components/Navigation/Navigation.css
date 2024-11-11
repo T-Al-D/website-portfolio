@@ -34,13 +34,13 @@
 }
 
 /*reacts to certain screen size*/
-@media (min-width: 930px) {
+@media (min-width: 945px) {
 	.small-nav {
 		display: none;
 	}
 }
 
-@media (max-width: 929px) {
+@media (max-width: 946px) {
 	.big-nav {
 		display: none;
 	}
