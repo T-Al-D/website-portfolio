@@ -14,6 +14,9 @@ import {
 import Grid from "@mui/material/Grid2";
 import "./About.css";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ignitionImg from "../../assets/images/certLogo/ignition-by-inductive-automation-logo-vector.svg";
+import lpiImg from "../../assets/images/certLogo/lpi.svg";
+import tulipImg from "../../assets/images/certLogo/Tulip-Feature.jpg";
 
 const certList = [
 	{
@@ -21,26 +24,26 @@ const certList = [
 		name: "Ignition (SCADA) 8.1",
 		description:
 			" Ignition is a software tool to digitalize industrial processes.",
-		languages: "Mostly Python, some SQL, CSS and HTML.",
-		imgSrc: "/",
-		link: "#",
+		languages: "Mostly Python, some SQL and CSS for web or client.",
+		imgSrc: ignitionImg,
+		link: "https://inductiveautomation.com/",
 	},
 	{
 		id: 2,
 		name: "Linux Essentials",
 		description: "Certification from Linux Professional Institute.",
-		languages: "Mostly Linux Terminal (Bash).",
-		imgSrc: "/",
-		link: "#",
+		languages: "Basic knowledge about Linux and Bash-Terminal.",
+		imgSrc: lpiImg,
+		link: "https://www.lpi.org/",
 	},
 	{
 		id: 3,
 		name: "Tulip",
 		description:
-			"Certification of low/no Code application for workstations.",
+			"Certification of low/no code application for workstations.",
 		languages: "",
-		imgSrc: "/",
-		link: "#",
+		imgSrc: tulipImg,
+		link: "https://tulip.co/",
 	},
 ];
 
@@ -81,8 +84,9 @@ export default function About() {
 							>
 								<Card
 									sx={{
-										maxWidth: 450,
-										minWidth: 250,
+										maxWidth: 375,
+										minWidth: 175,
+										height: "auto",
 										margin: -0.25,
 										padding: 0.95,
 										border: "2px solid #1976d2",
@@ -99,14 +103,18 @@ export default function About() {
 									<CardActionArea>
 										<CardMedia
 											component="img"
-											height="140"
+											height="auto"
+											width="auto"
 											image={item.imgSrc}
 											alt=""
+											sx={{ backgroundColor: "#ffff" }}
 										/>
 										<CardContent>
 											<Accordion
 												sx={{
 													margin: -1.5,
+													marginLeft: -2,
+													marginRight: -2,
 													padding: 0.25,
 													color: "#ffff",
 													backgroundColor:
@@ -130,31 +138,41 @@ export default function About() {
 														/>
 													}
 												>
-													{item.name}
-													{item.languages}
+													<pre className="mini-text">
+														{item.name}
+													</pre>
 												</AccordionSummary>
-												<Divider />
+												<Divider
+													sx={{
+														backgroundColor:
+															"#ffff",
+													}}
+												/>
 												<AccordionDetails>
-													{item.description}
-													<Link>
-														<Button
-															size="small"
-															sx={{
-																margin: 1,
-																fontWeight:
-																	"bold",
-																border: "2px solid #1976d2",
-																color: "#ffff",
-																"&:hover": {
-																	backgroundColor:
-																		"#1a3869", // Change background on hover
-																	borderColor:
-																		"#ffff", // Change border color on hover
-																},
-															}}
-														>
-															Learn More
-														</Button>
+													<pre className="mini-text">
+														{item.languages}
+													</pre>
+													<pre className="mini-text">
+														{item.description}
+													</pre>
+													<Link
+														href={item.link}
+														sx={{
+															margin: 1.3,
+															marginLeft: -0.25,
+															padding: 1,
+															fontWeight: "bold",
+															border: "2px solid #1976d2",
+															color: "#ffff",
+															"&:hover": {
+																backgroundColor:
+																	"#1a3869", // Change background on hover
+																borderColor:
+																	"#ffff", // Change border color on hover
+															},
+														}}
+													>
+														Learn More
 													</Link>
 												</AccordionDetails>
 											</Accordion>
@@ -170,6 +188,7 @@ export default function About() {
 				For the future I´m curious to see how software will create and
 				shape more complex virtual worlds.
 			</pre>
+			<h5>*Some images changed slightly, because copyright!*</h5>
 		</div>
 	);
 }
