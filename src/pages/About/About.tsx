@@ -3,20 +3,15 @@ import {
 	Box,
 	Button,
 	Card,
-	CardActions,
 	CardContent,
 	CardMedia,
-	Typography,
 	AccordionDetails,
 	Accordion,
 	AccordionSummary,
+	CardActionArea,
 	Link,
-	List,
-	ListItem,
-	ListItemButton,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import Stack from "@mui/material/Stack";
 import "./About.css";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
@@ -80,17 +75,92 @@ export default function About() {
 							<Grid
 								key={item.id}
 								sx={{
-									margin: -0.085,
-									padding: 2,
-									border: "2px solid #1976d2",
-									color: "#ffff",
-									"&:hover": {
-										backgroundColor: "#1a3869", // Change background on hover (example: blue)
-										borderColor: "#ffff", // Change border color on hover (optional)
-									},
+									margin: -0.1,
+									padding: 1,
 								}}
 							>
-								{item.description}
+								<Card
+									sx={{
+										maxWidth: 450,
+										minWidth: 250,
+										margin: -0.25,
+										padding: 0.95,
+										border: "2px solid #1976d2",
+										backgroundColor:
+											"rgba(39, 29, 61, 0.59)",
+										color: "#ffff",
+										"&:hover": {
+											backgroundColor:
+												"rgba(33, 0, 54, 0.52)", // Change background on hover
+											borderColor: "#ffff", // Change border color on hover
+										},
+									}}
+								>
+									<CardActionArea>
+										<CardMedia
+											component="img"
+											height="140"
+											image={item.imgSrc}
+											alt=""
+										/>
+										<CardContent>
+											<Accordion
+												sx={{
+													margin: -1.5,
+													padding: 0.25,
+													color: "#ffff",
+													backgroundColor:
+														"rgba(47, 0, 110, 0.75)",
+												}}
+											>
+												<AccordionSummary
+													sx={{
+														textDecoration:
+															"underline",
+														"&:hover": {
+															backgroundColor:
+																"#260f5e",
+														},
+													}}
+													expandIcon={
+														<ArrowDownwardIcon
+															sx={{
+																color: "#fff",
+															}}
+														/>
+													}
+												>
+													{item.name}
+													{item.languages}
+												</AccordionSummary>
+												<Divider />
+												<AccordionDetails>
+													{item.description}
+													<Link>
+														<Button
+															size="small"
+															sx={{
+																margin: 1,
+																fontWeight:
+																	"bold",
+																border: "2px solid #1976d2",
+																color: "#ffff",
+																"&:hover": {
+																	backgroundColor:
+																		"#1a3869", // Change background on hover (example: blue)
+																	borderColor:
+																		"#ffff", // Change border color on hover (optional)
+																},
+															}}
+														>
+															Learn More
+														</Button>
+													</Link>
+												</AccordionDetails>
+											</Accordion>
+										</CardContent>
+									</CardActionArea>
+								</Card>
 							</Grid>
 						))}
 					</Grid>

@@ -38,8 +38,7 @@ body {
 body::after {
 	content: "";
 	background-image: url("/images/background/blue-circuit-board.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-repeat: repeat;
 	opacity: 0.05;
 	top: 0;
 	left: 0;
