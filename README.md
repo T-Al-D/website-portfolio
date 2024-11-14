@@ -16,7 +16,7 @@ Images:
 
 -   https://sequenceqcs.com/blog/sequence-announces-partnership-with-tulip-interfaces
 -   https://worldvectorlogo.com/de/logo/lpi
--
+-   https://logovtor.com/ignition-by-inductive-automation-logo-vector-svg/
 
 ### Here: https://t-al-d.github.io/website-portfolio/
 
