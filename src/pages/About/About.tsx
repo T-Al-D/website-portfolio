@@ -147,9 +147,9 @@ export default function About() {
 																color: "#ffff",
 																"&:hover": {
 																	backgroundColor:
-																		"#1a3869", // Change background on hover (example: blue)
+																		"#1a3869", // Change background on hover
 																	borderColor:
-																		"#ffff", // Change border color on hover (optional)
+																		"#ffff", // Change border color on hover
 																},
 															}}
 														>
