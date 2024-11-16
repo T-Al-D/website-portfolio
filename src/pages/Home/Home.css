@@ -1,0 +1,81 @@
+.face {
+	position: relative;
+	min-height: 200px;
+	min-width: 200px;
+	max-width: 300px;
+	overflow: hidden;
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgb(61, 17, 119);
+}
+
+.eye {
+	position: absolute;
+	display: inline-block;
+	overflow: hidden;
+	min-height: 52px;
+	min-width: 52px;
+	max-width: 60px;
+	top: 7px;
+	border-radius: 7px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgb(8, 59, 117);
+}
+
+.left {
+	left: 10px;
+}
+
+.right {
+	right: 10px;
+}
+
+.pupil {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	z-index: -99;
+	top: 50%;
+	left: 50%;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgb(9, 124, 139);
+	transform: translate(-50%, -50%); /* Center the pupil */
+	animation: movePupils 3s ease-in-out infinite alternate; /* Add animation */
+}
+
+.mouth {
+	position: absolute;
+	display: block;
+	height: 55%;
+	z-index: -99;
+	width: 96.5%;
+	bottom: 0px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgb(49, 8, 116);
+	background-color: black;
+}
+
+/* Keyframes for pupil movement */
+@keyframes movePupils {
+	0% {
+		transform: translate(-50%, -50%) translate(-5px, -5px);
+	}
+	25% {
+		transform: translate(-50%, -50%) translate(5px, -5px);
+	}
+	50% {
+		transform: translate(-50%, -50%) translate(5px, 5px);
+	}
+	75% {
+		transform: translate(-50%, -50%) translate(-5px, 5px);
+	}
+	100% {
+		transform: translate(-50%, -50%) translate(-5px, -5px);
+	}
+}
