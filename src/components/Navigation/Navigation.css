@@ -10,7 +10,7 @@
 	border-style: double;
 	border-width: 5px;
 	border-color: rgba(25, 29, 255, 0.822);
-	background-color: rgb(45, 19, 105);
+	background-color: rgb(24, 11, 56);
 }
 
 .navigationButton {
@@ -19,7 +19,7 @@
 	min-width: 90px;
 	text-align: center;
 	/*calc in fontsize for minimum font-size*/
-	font-size: calc(16px + 0.8vw);
+	font-size: calc(1rem + 0.8vw);
 	color: #fff;
 	background-color: transparent;
 

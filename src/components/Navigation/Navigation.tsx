@@ -100,9 +100,15 @@ export default function Navigation() {
 		</Box>
 	);
 
-	const ButtonList = (
+	const buttonList = (
 		<div>
-			<List sx={{ display: "flex", flexDirection: "row", padding: 0 }}>
+			<List
+				sx={{
+					display: "flex",
+					flexDirection: "row",
+					padding: 0,
+				}}
+			>
 				{menuItems.map((item) => (
 					<ListItem
 						alignItems="flex-start"
@@ -127,7 +133,10 @@ export default function Navigation() {
 								<ListItemIcon sx={{ color: "#ffff" }}>
 									{item.icon}
 								</ListItemIcon>
-								<ListItemText primary={item.text} />
+								<ListItemText
+									sx={{ fontWeight: "bolder" }}
+									primary={item.text}
+								/>
 							</ListItemButton>
 						</Link>
 					</ListItem>
@@ -161,7 +170,7 @@ export default function Navigation() {
 					{DrawerList}
 				</Drawer>
 			</div>
-			<div className="big-nav">{ButtonList}</div>
+			<div className="big-nav">{buttonList}</div>
 		</div>
 	);
 }
