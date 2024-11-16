@@ -7,11 +7,13 @@ import "./Header.css";
 export default function Header() {
 	return (
 		<div className="headParent">
+			<Navigation />
 			<div className="headChild">
 				<a href={navBaseUrl}>
 					<img className="homepageImg" src={homepageImg} alt="" />
 				</a>
 			</div>
+
 			<div className="headChild">
 				<header>
 					<h1 className="headerLetters1">
@@ -21,7 +23,6 @@ export default function Header() {
 					<h3 className="headerLetters2">IT - Apprentice</h3>
 				</header>
 			</div>
-			<Navigation></Navigation>
 		</div>
 	);
 }

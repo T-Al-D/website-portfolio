@@ -76,7 +76,11 @@ export default function Navigation() {
 		>
 			<List>
 				{menuItems.map((item) => (
-					<ListItem key={item.text} disablePadding>
+					<ListItem
+						key={item.text}
+						disablePadding
+						sx={{ fontWeight: "bold" }}
+					>
 						<Link
 							href={item.url}
 							sx={{ color: "#ffff" }}
@@ -138,6 +142,7 @@ export default function Navigation() {
 				<Button
 					onClick={toggleDrawer(true)}
 					startIcon={<MenuIcon></MenuIcon>}
+					sx={{ fontWeight: "bold", color: "#ffff" }}
 				>
 					Menu
 				</Button>

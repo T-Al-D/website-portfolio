@@ -22,7 +22,7 @@ const certList = [
 		id: 1,
 		name: "Ignition (SCADA) 8.1",
 		description:
-			" Ignition is a software tool to digitalize industrial processes.",
+			" Ignition is a software tool (from inductive automation), to digitalize industrial processes. Example: Industry 3.0 and 4.0",
 		languages: "Mostly Python, some SQL and CSS for web or client.",
 		imgSrc: ignitionImg,
 		link: "https://inductiveautomation.com/",
@@ -50,16 +50,16 @@ export default function About() {
 	return (
 		<div>
 			<pre className="basic-text">
-				I´m programming since 2019 and discover since then the diverse
-				and interesting World of Software.
+				I´m programming since 2019. Since then I discover the diverse
+				and interesting world of Software.
 			</pre>
 			<pre className="basic-text">
 				Most of the time I´m codeing in Python, C# or sometimes SQL. But
 				I´ve also tried other languages like C or Typescript.
 			</pre>
 			<pre className="basic-text">
-				Currently I´m in an apprenticeship to become an IT-specialist
-				for application development.
+				In my apprenticeship, I have worked on a customer project with
+				Ignition (SCADA).
 			</pre>
 			<div>
 				<pre className="basic-text">
@@ -187,7 +187,6 @@ export default function About() {
 				For the future I´m curious to see how software will create and
 				shape more complex virtual worlds.
 			</pre>
-			<h5>*Some images changed slightly, because copyright!*</h5>
 		</div>
 	);
 }

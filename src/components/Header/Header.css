@@ -19,6 +19,7 @@
 
 .headerLetters1 {
 	font-size: calc(18px + 2vw);
+	margin-right: 85px;
 }
 
 .headerLetters2 {
