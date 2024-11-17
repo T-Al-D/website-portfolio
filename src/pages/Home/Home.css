@@ -44,21 +44,7 @@
 	border-width: 5px;
 	border-color: rgb(9, 124, 139);
 	transform: translate(-50%, -50%); /* Center the pupil */
-	animation: movePupils 3s ease-in-out infinite alternate; /* Add animation */
-}
-
-.mouth {
-	position: absolute;
-	display: block;
-	height: 55%;
-	z-index: -99;
-	width: 96.5%;
-	bottom: 0px;
-	border-radius: 5px;
-	border-style: solid;
-	border-width: 5px;
-	border-color: rgb(49, 8, 116);
-	background-color: black;
+	animation: movePupils 3s ease-in-out infinite alternate;
 }
 
 /* Keyframes for pupil movement */
@@ -77,5 +63,56 @@
 	}
 	100% {
 		transform: translate(-50%, -50%) translate(-5px, -5px);
+	}
+}
+
+.mouth {
+	position: absolute;
+	display: block;
+	height: 55%;
+	z-index: -99;
+	width: 96.5%;
+	bottom: 0px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgb(49, 8, 116);
+	background-color: black;
+}
+
+.inside-mouth {
+	font-size: 0.9rem;
+	text-align: left;
+	overflow: hidden;
+	width: 0;
+	white-space: nowrap;
+	border-right: 0.15em solid rgb(1, 219, 12); /* Cursor effect */
+	/* steps in animation lets the animation progress in 30 steps*/
+	/* multiple animation possible!*/
+	animation: typing 3s steps(30) 1s forwards,
+		blink-caret 0.75s step-end infinite, stop-blink 0s 4.5s forwards;
+}
+
+/* Keyframe for typing effect */
+@keyframes typing {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+/* Blink cursor effect */
+@keyframes blink-caret {
+	50% {
+		border-color: transparent;
+	}
+}
+
+/* stop blinking */
+@keyframes stop-blink {
+	100% {
+		border-color: transparent;
 	}
 }

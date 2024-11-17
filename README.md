@@ -1,10 +1,10 @@
 # Website-Portfolio
 
-## A Website build with react framework (typescript + vite)
+## A Website build with react framework (typescript + vite + mui)
 
 (Main)Icon created with : https://www.pixilart.com/
 Components from MUI : https://mui.com/material-ui/getting-started/installation/
-Backgroung-Image : https://pixabay.com/images/search/blue%20circuit/
+Background-Image : https://pixabay.com/images/search/blue%20circuit/
 
 Fonts:
 

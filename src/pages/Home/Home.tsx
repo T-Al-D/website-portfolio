@@ -16,7 +16,11 @@ export default function Home() {
 					<div className="eye right">
 						<div className="pupil right"></div>
 					</div>
-					<div className="mouth"></div>
+					<div className="mouth">
+						<div className="inside-mouth">
+							<pre> Hello World!</pre>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
