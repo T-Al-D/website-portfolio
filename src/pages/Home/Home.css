@@ -81,8 +81,8 @@
 }
 
 .inside-mouth {
-	font-size: 0.9rem;
-	text-align: left;
+	font-size: calc(5.5px + 2vw);
+	line-height: 0.75rem;
 	overflow: hidden;
 	width: 0;
 	white-space: nowrap;
@@ -91,6 +91,13 @@
 	/* multiple animation possible!*/
 	animation: typing 3s steps(30) 1s forwards,
 		blink-caret 0.75s step-end infinite, stop-blink 0s 4.5s forwards;
+}
+
+/*make sure font size is not to big*/
+@media screen and (min-width: 540px) {
+	.inside-mouth {
+		font-size: 17px;
+	}
 }
 
 /* Keyframe for typing effect */

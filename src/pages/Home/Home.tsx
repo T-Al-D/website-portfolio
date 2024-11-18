@@ -18,7 +18,9 @@ export default function Home() {
 					</div>
 					<div className="mouth">
 						<div className="inside-mouth">
-							<pre> Hello World!</pre>
+							<pre> if curious == true:</pre>
+							<pre> click on menu or footer</pre>
+							<pre> to discover more . :{")"}</pre>
 						</div>
 					</div>
 				</div>
