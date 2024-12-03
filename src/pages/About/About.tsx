@@ -100,14 +100,6 @@ export default function About() {
 									}}
 								>
 									<CardActionArea>
-										<CardMedia
-											component="img"
-											height="auto"
-											width="auto"
-											image={item.imgSrc}
-											alt=""
-											sx={{ backgroundColor: "#ffff" }}
-										/>
 										<CardContent>
 											<Accordion
 												sx={{

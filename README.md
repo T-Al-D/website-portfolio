@@ -16,13 +16,6 @@ Fonts:
 -   https://www.1001freefonts.com/kingthings-hand.font
 -   https://www.1001freefonts.com/objective.font
 
-Images:
-
--   https://sequenceqcs.com/blog/sequence-announces-partnership-with-tulip-interfaces
--   https://worldvectorlogo.com/de/logo/lpi
--   https://logovtor.com/ignition-by-inductive-automation-logo-vector-svg/
-
-.
 .
 .
 .
