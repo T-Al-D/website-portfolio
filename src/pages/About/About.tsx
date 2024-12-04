@@ -12,9 +12,6 @@ import {
 import Grid from "@mui/material/Grid2";
 import "./About.css";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import ignitionImg from "../../assets/images/certLogo/ignition-by-inductive-automation-logo-vector.svg";
-import lpiImg from "../../assets/images/certLogo/lpi.svg";
-import tulipImg from "../../assets/images/certLogo/Tulip-Feature.jpg";
 
 const certList = [
 	{
@@ -23,7 +20,6 @@ const certList = [
 		description:
 			" Ignition is a software tool (from inductive automation), to digitalize industrial processes. Example: Industry 3.0 and 4.0",
 		languages: "Mostly Python, some SQL and CSS for web or client.",
-		imgSrc: ignitionImg,
 		link: "https://inductiveautomation.com/",
 	},
 	{
@@ -31,7 +27,6 @@ const certList = [
 		name: "Linux Essentials",
 		description: "Certification from Linux Professional Institute.",
 		languages: "Basic knowledge about Linux and Bash-Terminal.",
-		imgSrc: lpiImg,
 		link: "https://www.lpi.org/",
 	},
 	{
@@ -40,7 +35,6 @@ const certList = [
 		description:
 			"Certification of low/no code application for workstations.",
 		languages: "",
-		imgSrc: tulipImg,
 		link: "https://tulip.co/",
 	},
 ];
