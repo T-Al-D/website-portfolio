@@ -44,16 +44,22 @@ export default function About() {
 		<div>
 			<pre className="basic-text">
 				I´m programming since 2019. Since then I discover the diverse
-				and interesting world of Software.
+				and interesting world of software.
 			</pre>
 			<pre className="basic-text">
-				Most of the time I´m codeing in Python, C# or sometimes SQL. But
-				I´ve also tried other languages like C or Typescript.
+				Most of the time I´m coding in Python, C#, SQL and sometimes
+				C++. But I´ve also tried other languages like Java or
+				Typescript.
 			</pre>
 			<pre className="basic-text">
 				In my apprenticeship, I have worked on a customer project with
 				Ignition (SCADA).
 			</pre>
+			<pre className="basic-text">
+				My final apprenticeship-project was the digitalization of a
+				manufacturing model (Fischertechnik) with the ESP32 and C++.
+			</pre>
+
 			<div>
 				<pre className="basic-text">
 					As of now I have the following certifications:

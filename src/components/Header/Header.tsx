@@ -34,7 +34,9 @@ export default function Header() {
 						Hello, I´m T-Al-D <WavingHandIcon />
 					</h1>
 
-					<h3 className="headerLetters2">IT - Apprentice</h3>
+					<h3 className="headerLetters2">
+						IT specialist (application development)
+					</h3>
 					<p>{date.toLocaleDateString()}</p>
 				</header>
 			</div>

@@ -13,6 +13,8 @@ import SentimentSatisfiedIcon from "@mui/icons-material/SentimentSatisfied";
 
 import tkinterImg from "../../assets/images/projects/TkinterMixedProgramms.PNG";
 import mixedProgramsImg from "../../assets/images/projects/MixedWPF.PNG";
+import circuitESP32 from "../../assets/images/projects/workspace_ESP32.jpg";
+import soccerRobotClassModel from "../../assets/images/projects/classes_SoccerRobot-Simultaion.png";
 
 /* make sure the images are packaged in the objects correcty, no {} !*/
 const projectList = [
@@ -36,11 +38,21 @@ const projectList = [
 	},
 	{
 		id: 3,
-		name: "Async ESP32-V3 Webserver",
+		name: "Digitalization of a manufacturing model with ESP32.",
 		language: "C++",
-		description: "Async Webserver with simple website - mini IoT Project.",
-		imgSrc: "",
-		link: "https://github.com/T-Al-D/Asynchronous-ESP32-Webserver",
+		description:
+			"Async Webserver ESP32, with a small website to check all actuators.",
+		imgSrc: circuitESP32,
+		link: "https://github.com/T-Al-D/ESP32-AsyncWebserver/tree/finalApprenticeshipProject",
+	},
+	{
+		id: 4,
+		name: "SoccerRobot-Simulation",
+		language: "Python",
+		description:
+			"Theoretical concept that has been worked on during my apprenticeship. Documented with doxygen.",
+		imgSrc: soccerRobotClassModel,
+		link: "https://github.com/T-Al-D/SoccerRobot-Simulation",
 	},
 ];
 

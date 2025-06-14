@@ -6,8 +6,7 @@ export default function Home() {
 			<div className="basic-text">
 				<pre className="basic-text">Welcome!</pre>
 				<pre className="basic-text">
-					Currently I´m in an apprenticeship to become an
-					IT-specialist in application development.
+					Trained IT specialist (App Dev)
 				</pre>
 				<div className="face">
 					<div className="eye left">
@@ -20,7 +19,7 @@ export default function Home() {
 						<div className="inside-mouth">
 							<pre> if curious == true:</pre>
 							<pre> click on menu or footer</pre>
-							<pre> to discover more . :{")"}</pre>
+							<pre> to discover more :{")"}</pre>
 						</div>
 					</div>
 				</div>
