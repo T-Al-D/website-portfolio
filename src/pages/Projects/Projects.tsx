@@ -50,7 +50,7 @@ const projectList = [
 		name: "SoccerRobot-Simulation",
 		language: "Python",
 		description:
-			"Theoretical concept that has been worked on during my apprenticeship. " +
+			"Theoretical concept that I worked on during my apprenticeship. " +
 			" Documented with doxygen.",
 		imgSrc: soccerRobotClassModel,
 		link: "https://github.com/T-Al-D/SoccerRobot-Simulation",
