@@ -35,7 +35,8 @@ export default function Header() {
 					</h1>
 
 					<h3 className="headerLetters2">
-						IT specialist (application development)
+						IT specialist (application development) with an
+						interested in innovative and creative IT solutions.
 					</h3>
 					<p>{date.toLocaleDateString()}</p>
 				</header>
